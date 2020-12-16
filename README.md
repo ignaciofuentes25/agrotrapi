@@ -4,19 +4,37 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Table of contents
 
-1. [ Development server. ](#dev)
-2. [ Code scaffolding. ](#code)
-3. [ Build. ](#build)
-4. [ Running unit tests. ](#runningunit)
-5. [ Running end-to-end tests. ](#runninge2e)
-6. [ Further help. ](#futher)
+1. [ Structure. ](#structure)
+2. [ Development server. ](#dev)
+3. [ Code scaffolding. ](#code)
+4. [ Build. ](#build)
+5. [ Running unit tests. ](#runningunit)
+6. [ Running end-to-end tests. ](#runninge2e)
+7. [ Further help. ](#futher)
+
+<a name="structure"></a>
+
+## Structure
+
+    .
+    ├── src
+    │   ├── app
+    │   │   ├── component
+    │   │   ├── content
+    │   ├── assets
+    │   │   ├── css
+    │   │   ├── fonts
+    │   │   ├── images
+    │   │   ├── js
+    │   └── environments
+    └── ...
 
 <a name="dev"></a>
 
 ## Development server
 
 Before running the project, use the `mpn install` command to download all the dependencies necessary for it.
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The next step runs the command `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 <a name="code"></a>
 
