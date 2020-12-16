@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Agrotrapi</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="http://kenwheeler.github.io/slick/slick/slick.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+
+	$(".Modern-Slider").slick({
+	    autoplay:true,
+	    autoplaySpeed:10000,
+	    speed:600,
+	    slidesToShow:1,
+	    slidesToScroll:1,
+	    pauseOnHover:false,
+	    dots:true,
+	    pauseOnDotsHover:true,
+	    cssEase:'linear',
+	    fade:true,
+	    draggable:false,
+	    prevArrow:'<button class="PrevArrow"></button>',
+	    nextArrow:'<button class="NextArrow"></button>', 
+	});
+
+	$('.search-icon a').on("click", function(event) {
+	    event.preventDefault();
+	    $("#search").addClass("open");
+	    $('#search > form > input[type="search"]').focus();
+	  });
+
+	  $("#search, #search button.close").on("click keyup", function(event) {
+	    if (
+	      event.target == this ||
+	      event.target.className == "close" ||
+	      event.keyCode == 27
+	    ) {
+	      $(this).removeClass("open");
+	    }
+	  });
+
+	  $("#search-box").submit(function(event) {
+	    event.preventDefault();
+	    return false;
+	  });
+
+
+	$(function() {
+        $("#tabs").tabs();
+    });
+
+	$('.owl-menu-item').owlCarousel({
+		items:5,
+		loop:true,
+		dots: true,
+		nav: true,
+		autoplay: true,
+		margin:30,
+		  responsive:{
+			  0:{
+				  items:1
+			  },
+			  600:{
+				  items:2
+			  },
+			  1000:{
+				  items:5
+			  }
+		  }
+	  })
+
+	// Window Resize Mobile Menu Fix
+	mobileNav();
+
+	// Scroll animation init
+	window.sr = new scrollReveal();
+	
+	// Menu Dropdown Toggle
+	if($('.menu-trigger').length){
+		$(".menu-trigger").on('click', function() {	
+			$(this).toggleClass('active');
+			$('.header-area .nav').slideToggle(200);
+		});
+	}
+
+	// Window Resize Mobile Menu Fix
+	$(window).on('resize', function() {
+		mobileNav();
+	});
+
+	// Window Resize Mobile Menu Fix
+	function mobileNav() {
+		var width = $(window).width();
+		$('.submenu').on('click', function() {
+			if(width < 767) {
+				$('.submenu ul').removeClass('active');
+				$(this).find('ul').toggleClass('active');
+			}
+		});
+	}
+      
+    })
+  </script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a [routerLink]="['/home']" class="logo">
+                        <img src="assets/images/klassy-logo.png" align="klassy cafe html template">
+                    </a>
+                    <ul class="nav">
+                        <li class="submenu">
+                            <a [routerLink]="['/home']" fragment="top">Inicio</a>
+                            <ul>
+                                <li><a [routerLink]="['/home']" fragment="about">¿Quienes somos?</a></li>
+                                <li><a [routerLink]="['/home']" fragment="history">Historia</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a [routerLink]="['cattle']" fragment="cattle">Nuestro ganado</a>
+                            <ul>
+                                <li><a [routerLink]="['/cattle']" fragment="nurture">Crianza</a></li>
+                                <li><a [routerLink]="['/cattle']" fragment="genetics">Genetica</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="scroll-to-section"><a [routerLink]="['certificates']">Cetificados</a></li> 
+
+                        <li class="scroll-to-section"><a [routerLink]="['contact']">Contacto</a></li>
+                    </ul>        
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

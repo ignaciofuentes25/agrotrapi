@@ -1,0 +1,95 @@
+#history {
+  margin-top: 120px;
+  background-color: #fffafa;
+  padding: 120px 0px;
+}
+
+#history .section-heading {
+  margin-bottom: 80px;
+}
+
+#history .price h6 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: #65c145;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 70px;
+}
+
+#history .card .main-text-button {
+  margin-left: 30px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+#history .owl-menu-item {
+  position: relative;
+}
+
+#history .owl-nav {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: -80px;
+  transform: translateY(5px);
+}
+
+#history .owl-dots {
+  display: none;
+}
+
+#history .owl-nav .owl-prev {
+  margin-right: 10px;
+  outline: none;
+}
+
+#history .owl-nav .owl-prev span,
+#history .owl-nav .owl-next span {
+  opacity: 0;
+}
+
+#history .owl-nav .owl-prev:before {
+  display: inline-block;
+  font-family: "FontAwesome";
+  color: #65c145;
+  font-size: 25px;
+  font-weight: 700;
+  content: "\f104";
+}
+
+#history .owl-nav .owl-prev {
+  opacity: 0.75;
+  transition: all 0.5s;
+}
+
+#history .owl-nav .owl-prev:hover {
+  opacity: 1;
+}
+
+#history .owl-nav .owl-next {
+  opacity: 0.75;
+  transition: all 0.5s;
+}
+
+#history .owl-nav .owl-next:hover {
+  opacity: 1;
+}
+
+#history .owl-nav .owl-next {
+  margin-left: 10px;
+  outline: none;
+}
+
+#history .owl-nav .owl-next:before {
+  display: inline-block;
+  font-family: "FontAwesome";
+  color: #65c145;
+  font-size: 25px;
+  font-weight: 700;
+  content: "\f105";
+}
