@@ -19,13 +19,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     .
     ├── src
     │   ├── app
-    │   │   ├── component
-    │   │   ├── content
+    │   │   ├── component  # All components of the application
+    │   │   ├── content    # All Header and Footer of the application
     │   ├── assets
-    │   │   ├── css
-    │   │   ├── fonts
-    │   │   ├── images
-    │   │   ├── js
+    │   │   ├── css        # General CSS
+    │   │   ├── fonts      # General Fonts
+    │   │   ├── images     # General Images
+    │   │   ├── js         # General JS
     │   └── environments
     └── ...
 
